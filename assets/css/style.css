@@ -1,0 +1,210 @@
+/* general page formatting */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #444444;
+}
+/* main section (video bg) */
+section {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #111111;
+    transition: .5s;
+    overflow: hidden;
+}
+/* side roll (menu list) active */
+.banner.active {
+    right: 300px;
+}
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo {
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* toggle menu*/
+header .toggle {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: url('../img/menu.svg');
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+header .toggle.active {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: url('../img/close-menu.svg');
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center;
+    cursor: pointer;
+}
+/* video background style */
+section.banner video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+}
+.banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+}
+/* texts */
+section .text {
+    position: relative;
+    z-index: 10;
+}
+section .text h2 {
+    font-size: 4em;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+
+}
+section .text h3 {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+}
+section .text p {
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 520px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+}
+section .text a {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500px;
+    color: #111111;
+    background: #ffffff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+/* social media links */
+section .social {
+    position: absolute;
+    z-index: 10;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .social li {
+    list-style: none;
+}
+section .social li a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffffff;
+    transform: scale(1.5);
+}
+/* menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+.menu ul {
+    position: relative;
+    text-align: center;
+}
+.menu ul li {
+    position: relative;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111111;
+}
+.menu .personal-footer {
+    position: absolute;
+    text-align: center;
+    margin-top: 600px;  
+    text-decoration: none;
+    color: #111111;
+}
+.menu .personal-footer p span a {
+    text-decoration: none;
+    color: #111111;
+}
+.menu .personal-footer p span a:hover {
+    color: #444444;
+}
+.menu .personal-footer ul {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.menu .personal-footer ul li {
+    padding: 3px;
+}
+/* responsiveness */
+@media (max-width: 991px) {
+    section,
+    section header {
+        padding: 30px;
+    }
+    section .text h2 {
+        font-size: 2.5em;
+    }
+    section .text h3 {
+        font-size: 1.5em;
+    }
+}
