@@ -1,9 +1,7 @@
 # lp-piaget
-> This project is a responsive landing page for the high end luxury brand Piaget.
-
+> This project is a responsive landing page for the high end luxury brand _Piaget_.
 ![Project Presentation](/assets/video/presentation.gif)
-
-> "Always do better than necessary." -Piaget
+> "Always do better than necessary." -Georges-Edouard Piaget
 
 ## 🚀 Project Description  
 This project is a responsive landing page with aesthetic video background using only HTML, CSS and JavaScript. This landing page aims to promote some of the beautiful women's watches from the _Limelight Gala Collection_ by the high end luxury brand _Piaget_.
@@ -30,7 +28,7 @@ This project is a responsive landing page with aesthetic video background using 
 ---
 
 ## 🔗 Demo 
-**Link:** [GitHub Pages - Click here to demo project](https://lucsantosdev.github.io/lp-piaget)
+**Link:** [GitHub Pages - Click here to see the demo project](https://lucsantosdev.github.io/lp-piaget)
 
 ---
 
