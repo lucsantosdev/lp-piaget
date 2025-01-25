@@ -24,11 +24,12 @@ This project is a responsive landing page with aesthetic video background using 
 | CSS 3         | Webpage Styling      |  
 | JavaScript         | Interactive Functions      |  
 | Font Awesome         | Icons Usage      |  
+| Vercel         | Web Deployment     |  
 
 ---
 
 ## 🔗 Demo 
-**Link:** [GitHub Pages - Click here to see the demo project](https://lucsantosdev.github.io/lp-piaget)
+**Link:** [Vercel - Click here to see the demo project](https://lp-piaget.vercel.app/index.html)
 
 ---
 
